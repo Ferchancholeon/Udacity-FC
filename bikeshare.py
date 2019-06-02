@@ -21,11 +21,11 @@ def get_filters():
         # get user input for city (chicago, new york city, washington). HINT: Use a while loop to handle invalid inputs
 
         city = input(
-            "Welcome to the US Bike Share data center! \n Which city would you like to explore, Washington, New York City or Chicago?\n").lower()
+            "Welcome to the US Bike Share Mariobros! \n Which city would you like to explore, Washington, New York City or Chicago?\n").lower()
         if city not in ['chicago', 'new york city', 'washington']:
             print("Sorry, I do not understand your input. Please input either chicago, new york city, or Washington.")
             continue
-        
+
         # get user input for month (all, january, february, ... , june)
 
         month_input = input("Please enter which month.\n").lower()
@@ -38,7 +38,7 @@ def get_filters():
             else:
                 month = MONTHS_LIST.index(month_input)+1
 
-        
+
         # get user input for day of week (all, monday, tuesday, ... sunday)
 
         day_input = input("Please enter which day.\n").lower()
@@ -188,9 +188,3 @@ def main():
 
 if __name__ == "__main__":
 	main()
-
-
-    
-    
-
-
